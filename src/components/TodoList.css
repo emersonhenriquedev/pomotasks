@@ -1,0 +1,7 @@
+.todo-list {
+  grid-area: todo-list;
+  background-color: #325c34;
+  min-height: 100vh;
+  padding: 5%;
+  color: #fefefe;
+}

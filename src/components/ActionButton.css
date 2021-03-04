@@ -1,0 +1,26 @@
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  min-width: 3rem;
+  min-height: 3rem;
+  border: solid 2px #fefefe;
+  border-radius: 3rem;
+  text-align: center;
+  color: #16351b;
+  padding: 1%;
+  background-color: #fefefe;
+}
+
+.action-button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.action-button:active,
+.action-button:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
