@@ -72,7 +72,7 @@ const Pomodoro = (props) => {
     const formatDisplay =
       minutes.toString().padStart(2, "0") +
       ":" +
-      seconds.toString().padEnd(2, "0");
+      seconds.toString().padStart(2, "0");
 
     setFormatedTime(formatDisplay);
     document.title = `(${formatedTime}) Pomotasks an simple pomodoro app`;
