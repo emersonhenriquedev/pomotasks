@@ -82,7 +82,10 @@ const Pomodoro = (props) => {
   const getPercentCompleted = () =>
     (remainingMinutes / STAGES[currentPomodoroStage]) * 100;
 
-  const handleStartStopClick = (e) => setPlaying(!playing);
+  const handleStartStopClick = (e) => {
+    setPlaying(!playing);
+    new Audio('mouse-doubleclick-02.wav').play()
+  };
 
   return (
     <div className="pomodoro">
