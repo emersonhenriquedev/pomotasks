@@ -21,7 +21,6 @@ const TaskAdd = ({ onHandleAddTask }) => {
     task.id = uuid();
     onHandleAddTask(task);
 
-    //console.log(task);
     setTask(initialTaskState);
   };
 

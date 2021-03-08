@@ -37,6 +37,7 @@ const Pomodoro = (props) => {
     if (playing && remainingMinutes == 0) {
       setPlaying(false);
       setCurrentPomodoroStage((index) => index + 1);
+      new Audio('Phone_01.mp3').play()
     }
     if (!playing) {
       setRemainingMinutes(STAGES[currentPomodoroStage]);
@@ -89,7 +90,6 @@ const Pomodoro = (props) => {
       <Display
         time={formatedTime}
         completed={getPercentCompleted()}
-        roundLabel={`${totalPomodoriFinished}/${totalPomodori}`}
       />
       <ActionButton handleClick={handleStartStopClick} state={playing} />
       <div className="stats">
